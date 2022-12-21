@@ -1,0 +1,15 @@
+.img-round {
+    border-radius: 20px;
+}
+
+.tweetCard {
+    cursor: pointer;
+}
+
+.tweetCard:hover {
+    background-color: aliceblue;
+}
+
+.usernameHover:hover {
+    text-decoration: underline;
+}
