@@ -31,7 +31,11 @@ export const SideBar = () => {
             className="h-100"
         >
             <div>
-                <div style={{ paddingLeft: 8, marginBottom: 20 }}>
+                <div
+                    style={{ paddingLeft: 8, marginBottom: 20 }}
+                    className="btn"
+                    onClick={() => navigate(ALL_ROUTES.HOME_PAGE)}
+                >
                     <img
                         width={40}
                         height={40}
