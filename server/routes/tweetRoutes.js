@@ -177,7 +177,7 @@ router.delete("/:id", async (req, res) => {
     }
 });
 
-// get tweet details
+// get all tweet details
 router.get("/", async (req, res) => {
     try {
         const tweets = await Tweet.find()

@@ -114,9 +114,7 @@ export const SideBar = () => {
                 }}
                 className="link-active"
                 onClick={() =>
-                    navigate(
-                        ALL_ROUTES.PROFILE_PAGE.replace(":/id", currUserId)
-                    )
+                    navigate(ALL_ROUTES.PROFILE_PAGE.replace(":id", currUserId))
                 }
             >
                 <img
@@ -128,8 +126,12 @@ export const SideBar = () => {
                     style={{ marginLeft: 10 }}
                 />
                 <div>
-                    <h4 className="m-0">Jayesh</h4>
-                    <span>@jayesh</span>
+                    <h4 className="m-0">
+                        {jwt_decode(localStorage.getItem("token"))?.name}
+                    </h4>
+                    <span>
+                        @{jwt_decode(localStorage.getItem("token"))?.username}
+                    </span>
                 </div>
             </div>
 

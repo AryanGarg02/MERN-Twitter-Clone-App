@@ -25,7 +25,7 @@ router.post("/login", async (req, res) => {
         user.password = undefined;
 
         const jwtSecret = jwt.sign(
-            { _id: user._id, username: user.username },
+            { _id: user._id, username: user.username, name: user.name },
             JWT_SECRET
         );
 
