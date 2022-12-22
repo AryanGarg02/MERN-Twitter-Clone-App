@@ -2,6 +2,12 @@
 
 A full-stack Twitter clone app built using Node.js, Express.js, React.js, and MongoDB.
 
+
+
+https://user-images.githubusercontent.com/41536903/209054139-d854b723-bc0f-46a3-bba8-e7bd7be49f68.mp4
+
+
+
 ## Features Implemented
 
 1. Authentication using jwt token, i.e user login and registration.
